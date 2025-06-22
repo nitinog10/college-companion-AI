@@ -1,2 +1,14 @@
-# college-companion-AI
-: 🎓 College Companion AI An AI-powered chatbot that helps students stay organized, improve their study habits, and understand difficult concepts with ease — like having a study buddy available 24/7.  🧠 Features ✅ Task/Assignment Tracking  ✅ Study Tips &amp; Exam Prep Suggestions  ✅ Concept Simplification (Explain like I'm 5)  
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Companion AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Initialize process.env.API_KEY if it's not already defined for browser environment
+      // In a real deployment, this would be set by the build/hosting environment.
+      // For local development, you can set it here or via a .env file processed by your bundler.
+      if (typeof process === 'undefined') {
+        process = { env: {} };
+      }
+      // IMPORTANT: Replace 'YOUR_GEMINI_API_KEY' with your actual API key for local testing.
+      // process.env.API_KEY = 'YOUR_GEMINI_API_KEY'; 
+      // Ensure this line is handled securely and not hardcoded in production.
+      // For the purpose of this exercise, we assume API_KEY is set in the execution environment.
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/preset-react/dist/preset-react.min.js"></script>
+    <script src="https://unpkg.com/@babel/preset-typescript/dist/preset-typescript.min.js"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
